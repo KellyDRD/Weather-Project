@@ -1,0 +1,107 @@
+.container {
+  display: block;
+  background-color: #f5ebeb;
+  border: solid #070f4e;
+  padding: 10px;
+  max-width: 720px;
+  margin: 20px;
+  border-radius: 10px;
+  font-family: "Barlow", sans-serif;
+}
+
+.btn {
+  border-radius: 10px;
+  border-color: #f5ebeb;
+  background-color: #2772db;
+  color: #f5ebeb;
+  padding: 0px 10px;
+  margin: 1px;
+}
+
+.btn:hover {
+  background-color: #070f4e;
+  color: #3ab1cb;
+  transition: all 100ms ease-in-out;
+}
+
+h1 {
+  color: #070f4e;
+  margin: 10px 5px;
+}
+
+h2 {
+  position: relative;
+  right: 10px;
+  bottom: 5px;
+  color: #2772db;
+  font-size: 44px;
+  font-weight: thin;
+  padding: 5px;
+  margin: 0px;
+}
+h6 {
+  position: relative;
+  left: 47px;
+  bottom: 50px;
+  margin: 0px;
+}
+
+h3 {
+  color: #3ab1cb;
+  margin: 5px;
+}
+
+p {
+  color: #070f4e;
+  font-size: 24px;
+  margin: 0 15px;
+}
+
+.dateTime {
+  color: #070f4e;
+  font-size: 24px;
+  margin: 0 15px;
+}
+
+.row {
+  color: #2772db;
+  margin: 0 5px;
+}
+
+hr {
+  color: #070f4e;
+}
+
+i {
+  color: #3ab1cb;
+}
+
+.sun-icon {
+  color: #f8da5b;
+}
+
+.rain-icon {
+  color: #c1c0b9;
+}
+
+.cloudy-icon {
+  color: #acdcee;
+}
+
+.sun-icon-big {
+  position: relative;
+  left: 10px;
+  bottom: 10px;
+  color: #f8da5b;
+  font-size: 48px;
+  margin: 10px;
+  padding: 0px;
+}
+
+ul {
+  position: relative;
+  left: 100px;
+  list-style: none;
+  padding: 0px;
+  margin: 0px;
+}
