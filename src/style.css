@@ -1,9 +1,13 @@
+.supercage {
+  max-width: 720px;
+}
+
 .container {
   display: block;
   background-color: #f5ebeb;
   border: solid #070f4e;
   padding: 10px;
-  max-width: 720px;
+
   margin: 20px;
   border-radius: 10px;
   font-family: "Barlow", sans-serif;
