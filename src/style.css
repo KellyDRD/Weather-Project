@@ -35,18 +35,19 @@ h1 {
 
 h2 {
   position: relative;
-  right: 10px;
-  bottom: 5px;
+  left: 70px;
+  bottom: 75px;
   color: #2772db;
   font-size: 44px;
   font-weight: thin;
   padding: 5px;
   margin: 0px;
 }
+
 h6 {
   position: relative;
-  left: 47px;
-  bottom: 50px;
+  left: 130px;
+  bottom: 123px;
   margin: 0px;
 }
 
@@ -95,7 +96,7 @@ i {
 .sun-icon-big {
   position: relative;
   left: 10px;
-  bottom: 10px;
+  bottom: 5px;
   color: #f8da5b;
   font-size: 48px;
   margin: 10px;
