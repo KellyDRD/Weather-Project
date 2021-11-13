@@ -77,6 +77,8 @@ h3 {
 .row {
   color: #2772db;
   margin: 0 5px;
+  border: 0 auto;
+  padding: 0 auto;
 }
 
 hr {
