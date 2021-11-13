@@ -60,6 +60,12 @@ function showTemperature(response) {
   );
   document.querySelector("#description").innerHTML =
     response.data.weather[0].main;
+  document
+    .querySelector("#icon")
+    .setAttribute(
+      "src",
+      `http://openweathermap.org/img/wn/${response.data.weather[0].icon}@2x.png`
+    );
 
   celsiusTemperature = response.data.main.temp;
   fahrenheitTemperature = response.data.main.temp;
