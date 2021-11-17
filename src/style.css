@@ -85,22 +85,6 @@ hr {
   color: #070f4e;
 }
 
-i {
-  color: #3ab1cb;
-}
-
-.sun-icon {
-  color: #f8da5b;
-}
-
-.rain-icon {
-  color: #c1c0b9;
-}
-
-.cloudy-icon {
-  color: #acdcee;
-}
-
 .main-icon {
   position: relative;
   right: 10px;
@@ -117,4 +101,13 @@ ul {
   list-style: none;
   padding: 0px;
   margin: 0px;
+}
+
+.weather-forecast {
+  margin-top: 20px;
+  text-align: center;
+}
+
+.weather-forecast-date {
+  font-size: 16px;
 }
