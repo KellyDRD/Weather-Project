@@ -27,7 +27,8 @@ let now = new Date();
 
 dateElement.innerHTML = formatDate(now);
 
-function displayForecast() {
+function displayForecast(response) {
+  console.log(response.data.daily);
   let forecastElement = document.querySelector("#forecast");
 
   let forecastHTML = `<div class="row">`;
@@ -76,6 +77,13 @@ celsiusLink.addEventListener("click", convertCelsius);
 let fahrenheitLink = document.querySelector("#fahrenheit-link");
 fahrenheitLink.addEventListener("click", convertFahrenheit);
 
+function getForecast(coordinates) {
+  let apiKey = "375047dec9386322672b073ccc06d9ac";
+  let apiUrl = `https://api.openweathermap.org/data/2.5/onecall?lat=${coordinates.lat}&lon=${coordinates.lon}&appid=${apiKey}&units=imperial`;
+
+  axios.get(apiUrl).then(displayForecast);
+}
+
 function showTemperature(response) {
   console.log(response);
   document.querySelector("#city").innerHTML = response.data.name;
@@ -97,6 +105,8 @@ function showTemperature(response) {
 
   celsiusTemperature = response.data.main.temp;
   fahrenheitTemperature = response.data.main.temp;
+
+  getForecast(response.data.coord);
 }
 
 function searchCity(city) {
@@ -129,4 +139,3 @@ let currentLocationButton = document.querySelector("#current-location-button");
 currentLocationButton.addEventListener("clcik", getCurrentLocation);
 
 searchCity("Minneapolis");
-displayForecast();
